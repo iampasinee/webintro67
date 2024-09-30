@@ -29,15 +29,16 @@
 .btn-bittersweet{
     color: var(--bittersweet);
     border: 1px solid var(--bittersweet);
+    font-family: var(--ff-josefin-sans);
     font-weight: 400;
     padding: 8px 20px;
-    border-radius: 2px;
-    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 .btn-bittersweet:hover{
     color: var(--white);
     background: var(--bittersweet);
-    transform: scale(1.06);
+    transform: scale(1.02);
 }
 
 *,
@@ -359,6 +360,105 @@ section.product-section{
     margin-left: 8px;
 }
 
+/* list Cart */
+  
+/* สไตล์สำหรับรายการสินค้า */
+.list-item {
+    background-color: #f8f9fa; /* สีพื้นหลังที่สว่างขึ้น */
+}
+
+.list-item .product-name h5 {
+    font-size: 1.2rem; /* ปรับขนาดของชื่อสินค้า */
+    font-weight: 600; /* เพิ่มน้ำหนักให้ชื่อสินค้า */
+    margin-bottom: 0.5rem; /* เว้นระยะห่างเล็กน้อย */
+}
+
+.list-item .product-price {
+    font-size: 0.92rem; /* ขนาดของราคารวม */
+    color: var(--bittersweet); /* สีของราคา (เช่น สีแดง) */
+}
+
+/* ปรับให้ไอคอน plus และ minus เป็นวงกลม */
+.product-quantity .minus, 
+.product-quantity .plus {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    color: var(--bittersweet);
+    border: 1px solid var(--bittersweet); /* เส้นขอบสีดำ */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* เพิ่มเคอร์เซอร์เมื่อโฮเวอร์ */
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    transition: background-color 0.3s ease, color 0.3s ease; /* ทำให้เปลี่ยนสีลื่นไหล */
+}
+
+.product-quantity .minus:hover, 
+.product-quantity .plus:hover {
+    background-color: var(--bittersweet); /* สีพื้นหลังเมื่อโฮเวอร์ */
+    color: white; /* สีของไอคอนเมื่อโฮเวอร์ */
+}
+
+/* ปรับขนาดของไอคอน */
+.product-quantity .minus i, 
+.product-quantity .plus i {
+    font-size: 1.1rem; /* ขนาดของไอคอน */
+}
+
+/* ปรับแต่งการแสดงจำนวน */
+.product-quantity .amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--onyx); /* ใช้สีเด่น */
+    font-weight: 700;
+    padding: 0 8px; /* เพิ่ม padding เพื่อให้มีระยะห่าง */
+    background-color: transparent; /* พื้นหลังโปร่งใส */
+}
+
+.list-item .img-fluid {
+    object-fit: cover;
+    max-height: 100px; /* ขนาดสูงสุดของรูปภาพ */
+}
+
+
+/* ปรับให้รายการสินค้าเลื่อนได้เมื่อมีหลายรายการ */
+.offcanvas-body {
+    max-height: calc(100vh - 150px); /* กำหนดความสูงสูงสุดของ body */
+    overflow-y: auto; /* เปิดการเลื่อนแนวตั้ง */
+}
+.offcanvas-body::-webkit-scrollbar {
+    width: 0;
+}
+.checkout-section .total {
+    font-size: 1.08rem; /* ขนาดตัวอักษรที่พอเหมาะ */
+    margin: 0 10px; /* เพิ่มระยะห่างซ้ายขวา */
+    padding: 5px; /* เพิ่ม padding เล็กน้อย */
+}
+.checkout-section .btn {
+    background-color: var(--bittersweet); /* สีพื้นหลัง */
+    color: var(--white); /* สีตัวอักษร */
+    border: none; /* เอาเส้นขอบออก */
+    padding: 0.75rem 1.5rem; /* ขนาดปุ่มที่ใหญ่ขึ้น */
+    border-radius: 50px; /* มุมโค้งเพื่อให้ดูนุ่มนวล */
+    font-size: 1rem; /* ขนาดตัวอักษร */
+    font-weight: 700; /* ทำให้ตัวอักษรหนา */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบา */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เอฟเฟกต์การเปลี่ยนสีและการขยาย */
+}
+
+.checkout-section .btn:is(:hover, :focus) {
+    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อยเมื่อโฮเวอร์ */
+}
+.checkout-section .btn:active {
+    background-color: var(--white); /* สีพื้นหลัง */
+    color: var(--bittersweet); /* สีตัวอักษร */
+    transform: translateY(0); /* ยกเลิกการยกเมื่อคลิก */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* เปลี่ยนเงาเมื่อคลิก */
+}
 
 
 
@@ -400,6 +500,9 @@ section.product-section{
     color: var(--bittersweet);
     background: transparent;
 }
+
+
+
 /*
     Responsive
 */
@@ -487,6 +590,13 @@ section.product-section{
     }
     section.hero-section{
         height: 80vh;
+    }
+    .product-name h5 {
+        font-size: 0.9rem; /* ขนาดตัวอักษรที่เล็กลงเมื่ออยู่ในจอเล็ก */
+    }
+    
+    .product-price {
+        font-size: 1rem; /* ลดขนาดฟอนต์ในจอเล็ก */
     }
 }
 

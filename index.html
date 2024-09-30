@@ -91,20 +91,6 @@
     </nav>
     <!-- END Navbar -->
 
-    <!-- cart  -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingcart" aria-labelledby="yourcart">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="yourcart">Your Cart</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p class="text-center h5">Your Cart</p>
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          </ul>
-        </div>
-      </div>
-
-
     <!-- hero banner -->
     <section class="hero-section">
         <div class="container">
@@ -149,8 +135,8 @@
         <!-- Product List -->
          <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
-                    <div class="product-box">
+                <div class="col-lg-3 col-md-4 md-mb-3 pb-3" >
+                    <div class="product-box" data-id="product-1">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
                                 <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
@@ -177,11 +163,11 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
-                    <div class="product-box">
+                <div class="col-lg-3 col-md-4 md-mb-3 pb-3" >
+                    <div class="product-box" data-id="product-2">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
-                                <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
                             </div>
                             <div class="icons position-absolute">
                                 <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
@@ -196,10 +182,10 @@
                         </div>
                         <div class="product-info">
                             <div class="product-name text-center">
-                                <h3><a href="#"> Iris Bright Dress </a></h3>
+                                <h3><a href="#"> Summer Blossom Dress </a></h3>
                             </div>
                             <div class="product-price text-center">
-                                <data class="card-price" value="1490"> ฿1,490 <del>฿1,690</del> </data>
+                                <data class="card-price" value="1790"> ฿1,790 </data>
                             </div>
                         </div>
                     </div>
@@ -322,6 +308,30 @@
          </div>
 
     </section>
+
+    <!-- Offcanvas Shopping Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingcart" aria-labelledby="yourcart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="shoppingcart">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <!-- รายการสินค้า จะถูกเติมข้อมูลที่นี่ -->
+            <div id="cart-items">
+                <!-- สินค้าจะแสดงที่นี่ -->
+            </div>
+        </div>
+
+        <!-- ปุ่ม Checkout และราคารวม -->
+        <div class="checkout-section">
+            <div class="d-flex justify-content-between align-items-center p-3 border-top">
+                <span class="fw-bold total">Total: ฿0</span>
+                <button class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <div class="container-fluid m-0 section-footer">
