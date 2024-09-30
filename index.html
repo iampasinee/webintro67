@@ -75,7 +75,7 @@
                     <span class="nav-badge">2</span>
                 </i>
             </a>
-            <a href="#" class="icon-botton ">
+            <a href="#" class="icon-botton " data-bs-toggle="offcanvas" data-bs-target="#shoppingcart" aria-controls="shoppingcart" aria-label="Toggle navigation">
                 <i class="bi bi-bag">
                     <span class="nav-badge">5</span>
                 </i>
@@ -90,6 +90,20 @@
         </div>
     </nav>
     <!-- END Navbar -->
+
+    <!-- cart  -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingcart" aria-labelledby="yourcart">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="yourcart">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-center h5">Your Cart</p>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          </ul>
+        </div>
+      </div>
+
 
     <!-- hero banner -->
     <section class="hero-section">
@@ -116,7 +130,8 @@
     </section>
 
     <!-- Products -->
-     <section class="product-section">
+    <section class="product-section">
+
         <!-- Filter button -->
         <div class="container justify-content-center">
             <div class="row justify-content-center product-title">
@@ -306,8 +321,61 @@
             </div>
          </div>
 
-     </section>
+    </section>
 
+    <!-- Footer -->
+    <div class="container-fluid m-0 section-footer">
+        <footer class="py-3 px-lg-3">
+            <div class="row justify-content-center justify-content-sm-center justify-content-md-between justify-content-lg-center pt-4 px-lg-5">
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-sm-3">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class=" flex-column p-0">
+                        <li class="mb-0"><address class="p-0 "><i class="bi bi-geo-alt-fill"></i> <span> 123 Noen Hom, Mueang Prachin Buri, Prachin Buri,Thailand</span></address></li>
+                        <li class="mb-0"><a href="tel:+660123456789" class="p-0 "><i class="bi bi-telephone-fill"></i> <span> +66 0123456789</span></a></li>
+                        <li class="mb-2"><a href="mailto:Example@email.com" class="p-0"><i class="bi bi-envelope-fill"></i><span> Example@email.com</span></a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-sm-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Collections</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Products</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Shop</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Contact</a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-3 mb-lg-0">
+                    <form>
+                        <h5 class="footer-title">Subscribe to our newsletter</h5>
+                        <p class="newslet-text">Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <form class="card p-2">
+                                <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <button type="submit" class="btn btn-newslet">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+      
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-0 my-0 py-md-2 px-lg-5 mx-lg-5 border-top">
+                <p class="">© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex ">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-tiktok fs-4"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+      </div>
+
+    
 
 
 
