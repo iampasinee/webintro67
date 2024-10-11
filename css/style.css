@@ -156,6 +156,12 @@ a i span.nav-badge {
     background: var(--bittersweet);
     transform: translate(-50%, -50%) !important;
 }
+a i span.nav-badge.cart {
+    display: none;
+}
+a i span.nav-badge.cart.visible {
+    display: inline-block; /* แสดงเมื่อมีการเพิ่มจำนวนสินค้า */
+}
 .dropdown-menu{
     border-radius: 0;
     margin-top: 200px;
@@ -173,6 +179,35 @@ a i span.nav-badge {
 
 .dropdown-item:hover{
     color: var(--bittersweet);
+}
+
+/* search */
+
+.search-bar {
+    display: none; /* ซ่อนช่องค้นหา */
+    position: absolute; /* อยู่เหนือ navbar */
+    top: 75px; /* ระยะห่างจากด้านบน (60px) */
+    right: 20px; /* ระยะห่างจากด้านขวา (20px) */
+    border-radius: 8px; /* มุมมน */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เงา */
+    padding: 5px; /* ช่องว่างภายใน */
+    width: 300px; /* ความกว้างของช่องค้นหา (300px) */
+    z-index: 1000; /* ให้แน่ใจว่าอยู่เหนือทุกอย่าง */
+}
+
+/* แสดงช่องค้นหาเมื่อเปิด */
+.search-bar.active {
+    display: flex; /* แสดงช่องค้นหา */
+}
+
+/* สไตล์ input */
+.search-bar input {
+    border: none; /* ไม่มีขอบ */
+    border-radius: 8px; /* มุมมน */
+    padding: 8px; /* ช่องว่างภายใน (8px) */
+    flex: 1; /* ยืดตามขนาด */
+    outline: none; /* ไม่มีขอบเมื่อเลือก */
+    background-color: var(--white); /* สีพื้นหลัง */
 }
 
 
@@ -603,6 +638,9 @@ section.product-section{
 @media (max-width: 400px){
     .navbar{
         position: sticky;
+    }
+    .search-bar {
+        right: auto;
     }
     section.hero-section{
         height: 80vh;

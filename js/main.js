@@ -105,6 +105,9 @@ function addToCart(event) {
 
     // Update the cart display in the offcanvas
     updateCartDisplay();
+
+    // Update the badge number
+    updateCartBadge();
 }
 
 // Function to remove product from cart
@@ -117,11 +120,69 @@ function removeFromCart(productId) {
         
         // Update the cart display
         updateCartDisplay();
+
+        // Update the badge number
+        updateCartBadge();
     }
 }
+// ฟังก์ชันเพื่ออัปเดตแบจ
+function updateCartBadge() {
+    const badgeAll = document.getElementById('badge-all');
 
+    // สร้างตัวแปรสำหรับการนับประเภทสินค้า
+    let totalTypes = 0;
+    let uniqueProductIds = new Set(); // ใช้ Set เพื่อเก็บ id สินค้า
+
+    // ตรวจสอบสินค้าที่มีในตะกร้า
+    cart.forEach(product => {
+        uniqueProductIds.add(product.id); // เพิ่ม id ของสินค้าใน Set
+    });
+
+    // นับจำนวนประเภทสินค้าที่ไม่ซ้ำกัน
+    totalTypes = uniqueProductIds.size;
+
+    // อัปเดตแบจ
+    badgeAll.innerText = totalTypes > 0 ? totalTypes : '0'; // แสดงจำนวนประเภทสินค้าที่มี หรือ '0' หากไม่มี
+
+    // ถ้าไม่มีสินค้าในตะกร้า ให้ซ่อนแบจ
+    if (totalTypes === 0) {
+        badgeAll.style.display = 'none'; // ซ่อนแบจถ้าไม่มีสินค้า
+    } else {
+        badgeAll.style.display = 'inline'; // แสดงแบจถ้ามีสินค้า
+    }
+}
 
 // Add event listener to each button
 addToCartButtons.forEach(button => {
     button.addEventListener('click', addToCart);
 });
+
+
+ // JavaScript สำหรับการเปิด/ปิดช่องค้นหา
+ function toggleSearch() {
+    const searchBar = document.getElementById('search-bar');
+    searchBar.classList.toggle('active');
+}
+
+function changeImage(imageSrc) {
+    document.getElementById('main-image').src = imageSrc;
+}
+
+const colorButtons = document.querySelectorAll('.color-btn');
+    let selectedColor = '';
+
+    colorButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove 'active' class from all buttons
+            colorButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Add 'active' class to the clicked button
+            this.classList.add('active');
+
+            // Set the selected color
+            selectedColor = this.getAttribute('data-color');
+
+            // Optional: Display the selected color (you can remove this if not needed)
+            console.log('Selected Color:', selectedColor);
+        });
+    });
