@@ -462,37 +462,66 @@ section.product-section{
 
 /* ปรับให้รายการสินค้าเลื่อนได้เมื่อมีหลายรายการ */
 .offcanvas-body {
-    max-height: calc(100vh - 150px); /* กำหนดความสูงสูงสุดของ body */
+    max-height: calc(100vh - 150px); 
     overflow-y: auto; /* เปิดการเลื่อนแนวตั้ง */
 }
 .offcanvas-body::-webkit-scrollbar {
     width: 0;
 }
 .checkout-section .total {
-    font-size: 1.08rem; /* ขนาดตัวอักษรที่พอเหมาะ */
-    margin: 0 10px; /* เพิ่มระยะห่างซ้ายขวา */
-    padding: 5px; /* เพิ่ม padding เล็กน้อย */
+    font-size: 1.08rem; 
+    margin: 0 10px; 
+    padding: 5px; 
 }
 .checkout-section .btn {
-    background-color: var(--bittersweet); /* สีพื้นหลัง */
-    color: var(--white); /* สีตัวอักษร */
-    border: none; /* เอาเส้นขอบออก */
-    padding: 0.75rem 1.5rem; /* ขนาดปุ่มที่ใหญ่ขึ้น */
-    border-radius: 50px; /* มุมโค้งเพื่อให้ดูนุ่มนวล */
-    font-size: 1rem; /* ขนาดตัวอักษร */
-    font-weight: 700; /* ทำให้ตัวอักษรหนา */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบา */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* เอฟเฟกต์การเปลี่ยนสีและการขยาย */
+    background-color: var(--bittersweet); 
+    color: var(--white); 
+    border: none; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 50px; 
+    font-size: 1rem; 
+    font-weight: 700; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .checkout-section .btn:is(:hover, :focus) {
-    transform: translateY(-2px); /* ยกปุ่มขึ้นเล็กน้อยเมื่อโฮเวอร์ */
+    transform: translateY(-2px); 
 }
 .checkout-section .btn:active {
-    background-color: var(--white); /* สีพื้นหลัง */
-    color: var(--bittersweet); /* สีตัวอักษร */
-    transform: translateY(0); /* ยกเลิกการยกเมื่อคลิก */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* เปลี่ยนเงาเมื่อคลิก */
+    background-color: var(--white); 
+    color: var(--bittersweet); 
+    transform: translateY(0); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* New collections*/
+.newcol .overflow-x-scroll {
+    height: max-content; /* กำหนดความสูงของ div */
+    overflow-x: auto; /* เปิดใช้งานการเลื่อนในแนวนอน */
+    white-space: nowrap; /* ป้องกันไม่ให้เนื้อหาตัดบรรทัด */
+}
+
+.newcol .scrollable-container {
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงสินค้าในแถวเดียว */
+    width: 20vw; /* ความกว้าง 20% ของหน้าจอ */
+}
+
+/* ตกแต่ง scrollbar */
+.newcol .overflow-x-scroll::-webkit-scrollbar {
+    height: 8px; /* กำหนดความสูงของ scrollbar สำหรับแนวนอน */
+}
+
+.newcol .overflow-x-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--bittersweet); /* เปลี่ยนเป็นสีที่ต้องการ */
+    border-radius: 10px; /* มุมโค้งของ thumb */
+    border: 1px solid var(--white); /* เส้นขอบสำหรับ thumb */
+}
+
+.newcol .overflow-x-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; /* สีของ track (พื้นหลัง scrollbar) */
+    border-radius: 10px; /* มุมโค้งของ track */
+    outline: 1px solid var(--bittersweet); /* เส้นขอบสำหรับ track */
 }
 
 
@@ -580,6 +609,7 @@ section.product-section{
     }
     
 }
+
 @media (max-width: 991px) {
     .navbar{
         position: sticky;
