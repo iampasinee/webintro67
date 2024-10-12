@@ -36,16 +36,16 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2"  href="index.html">Home</a>
+                            <a class="nav-link mx-lg-2" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Products</a>
+                            <a class="nav-link mx-lg-2 " href="product.html">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="index.html#newcollection">New Collections</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2 active " aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -79,96 +79,109 @@
     </nav>
     <!-- END Navbar -->
 
-    <!-- Contact -->
-    <div class="container mt-5 ">
-        <div class="">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d664.3970434526209!2d101.36545434892525!3d14.163903295093336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c52d1517a368f%3A0xdb2834d0125dc485!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4Lie4Lij4Liw4LiZ4LiE4Lij4LmA4Lir4LiZ4Li34LitIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC4m-C4o-C4suC4iOC4teC4meC4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1728750955230!5m2!1sth!2sth" 
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <div class="">
-            <hr>
-            <h6>Contact With Us</h6>
-            <p class="ms-3 text-muted mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, nihil fuga fugiat molestias 
-                provident voluptatum quos cumque tenetur sed iure illum et nulla quaerat incidunt dolores dolorem deleniti nesciunt tempora!</p>
-        </div>
-        <div class="col-12 col-md-11 col-lg-8 mx-auto ">
-            <form class="row g-3">
-                <div class="col-md-6">
-                    <label for="inputname" class="form-label">Your name <span class="text-danger fw-bold">*</span></label>
-                    <input type="text" class="form-control rounded-0" id="inputname" required>
-                  </div>
-                <div class="col-md-6">
-                  <label for="inputEmail" class="form-label">Your Email <span class="text-danger fw-bold">*</span></label>
-                  <input type="email" class="form-control rounded-0" id="inputEmail" required>
+    <!-- Checkout Section -->
+    <div class="container my-5">
+        <h2 class="mb-4">Checkout</h2>
+        <hr class="mb-5">
+        <div class="row">
+            <!-- Order Summary -->
+            <div class="col-md-5 mx-3 " >
+                <!-- Product Check -->
+                <div class="product-check overflow-y-auto" style="max-height: 500px;">
+                    <div class="container mb-4" id="order-summary">
+                        <div class="list-item row p-2 border border-1 mb-2">
+                            <div class="col-4 col-md-3 product-img d-flex align-items-center justify-content-center">
+                                <img src="./image/s11-1.jpg" class="img-fluid rounded" alt="Product Image">
+                            </div>
+                            <div class="col-8 col-md-9 justify-content-center">
+                                <div class="product-name text-center">
+                                    <h4><a href="#">Product 1</a></h4>
+                                </div>
+                                <div class="product-price text-center m-0">
+                                    <data class="card-price" value="100">฿200</data>
+                                </div>
+                                <div class="row product-quantity justify-content-center mt-2">
+                                    <div class="col-2 col-md-1 minus text-center"><i class="bi bi-dash"></i></div>
+                                    <div class="col-4 col-md-2 amount text-center">1</div>
+                                    <div class="col-2 col-md-1 plus text-center"><i class="bi bi-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mb-4" id="order-summary">
+                        <div class="list-item row p-2 border border-1 mb-2">
+                            <div class="col-4 col-md-3 product-img d-flex align-items-center justify-content-center">
+                                <img src="./image/s11-1.jpg" class="img-fluid rounded" alt="Product Image">
+                            </div>
+                            <div class="col-8 col-md-9 justify-content-center">
+                                <div class="product-name text-center">
+                                    <h4><a href="#">Product 1</a></h4>
+                                </div>
+                                <div class="product-price text-center m-0">
+                                    <data class="card-price" value="100">฿200</data>
+                                </div>
+                                <div class="row product-quantity justify-content-center mt-2">
+                                    <div class="col-2 col-md-1 minus text-center"><i class="bi bi-dash"></i></div>
+                                    <div class="col-4 col-md-2 amount text-center">1</div>
+                                    <div class="col-2 col-md-1 plus text-center"><i class="bi bi-plus"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12">
-                  <label for="inputsubject" class="form-label">Subject <span class="text-danger fw-bold">*</span></label>
-                  <input type="text" class="form-control rounded-0" id="inputsubject" required>
+                <!-- Checkout Section -->
+                <div class="checkout-section">
+                    <div class="d-flex justify-content-end align-items-center mt-1 p-0 border-top">
+                        <span class="fw-bold total">Total: ฿0</span>
+                    </div>
                 </div>
-                <div class="col-12">
-                  <label for="inputmessage" class="form-label">Message <span class="text-danger fw-bold">*</span></label>
-                  <textarea class="form-control rounded-0" id="inputmessage" required></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-bittersweet w-25 py-2 rounded-0 fw-bold">Send Message</button>
-                </div>
-            </form>
+            </div>
+
+            
+            <!-- Payment and Shipping Form -->
+            <div class="col-md-5">
+                <h4>Billing and Shipping</h4>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputname" class="form-label">Your name <span class="text-danger fw-bold">*</span></label>
+                        <input type="text" class="form-control rounded-0" id="inputname" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputtel" class="form-label">Your Phone <span class="text-danger fw-bold">*</span></label>
+                        <input type="tel" class="form-control rounded-0" minlength="10" maxlength="10" id="inputtel" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-3456-7890" required>
+                      </div>
+                    <div class="col-12">
+                      <label for="inputEmail" class="form-label">Your Email <span class="text-danger fw-bold">*</span></label>
+                      <input type="email" class="form-control rounded-0" id="inputEmail" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputaddress" class="form-label">Your Address <span class="text-danger fw-bold">*</span></label>
+                        <textarea class="form-control rounded-0" id="inputaddress" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputdiscount" class="form-label">Discount</label>
+                        <input type="text" class="form-control rounded-0" id="inputdiscount">
+                    </div>
+                    <div class="col-12">
+                        <label for="payment" class="form-label">Payment Method <span class="text-danger fw-bold">*</span></label>
+                        <select class="form-select rounded-0" id="payment" required>
+                            <option>Cash on Delivery</option>
+                            <option>Credit Card</p></option>
+                            <option>Bank Transfer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-bittersweet w-100 py-2 rounded-0 fw-bold">Check Out</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
-    <!-- SERVICE -->
-     <div class="container my-5 service">
-        <div class="row">
-            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
-                        <h1><i class="bi bi-truck"></i></h1>
-                    </div>
-                    <div class="col p-0 card-title">
-                        <p class="m-0 fw-semibold fw-bold fs-4">Free Shiping</p>
-                        <p class="m-0 text-muted">All orders over <span>$150</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
-                        <h1><i class="bi bi-credit-card"></i></h1>
-                    </div>
-                    <div class="col p-0 card-title">
-                        <p class="m-0 fw-semibold fw-bold fs-4">Quick Payment</p>
-                        <p class="m-0 text-muted">100% secure payment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
-                        <h1><i class="bi bi-arrow-clockwise"></i></h1>
-                    </div>
-                    <div class="col p-0 card-title">
-                        <p class="m-0 fw-semibold fw-bold fs-4">Free Returns</p>
-                        <p class="m-0 text-muted">Money back in 30 days</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
-                        <h1><i class="bi bi-headset"></i></h1>
-                    </div>
-                    <div class="col p-0 card-title">
-                        <p class="m-0 fw-semibold fw-bold fs-4">24/7 Support</p>
-                        <p class="m-0 text-muted">Get Quick Support</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </div>
-     
 
-
+    
     <!-- Offcanvas Shopping Cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingcart" aria-labelledby="yourcart">
         <div class="offcanvas-header">
@@ -210,9 +223,9 @@
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="index.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Home</a></li>
-                        <li class="nav-item mb-2"><a href="product.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Products</a></li>
+                        <li class="nav-item mb-2"><a href="product.html#" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Products</a></li>
                         <li class="nav-item mb-2"><a href="index.html#newcollection" class="nav-footer p-0"><i class="bi bi-chevron-right"></i>New Collections</a></li>
-                        <li class="nav-item mb-2"><a href="contact.html#" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
       
@@ -243,6 +256,8 @@
             </div>
         </footer>
       </div>
+
+    
 
 
 

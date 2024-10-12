@@ -186,3 +186,4 @@ const colorButtons = document.querySelectorAll('.color-btn');
             console.log('Selected Color:', selectedColor);
         });
     });
+    
