@@ -83,11 +83,11 @@
     <div class="container my-5">
         <h2 class="mb-4">Checkout</h2>
         <hr class="mb-5">
-        <div class="row">
+        <div class="row p-0 ">
             <!-- Order Summary -->
-            <div class="col-md-5 mx-3 " >
+            <div class="col-md-6 col-lg-5 mb-5 mb-md-0 mx-0 mx-lg-3 " >
                 <!-- Product Check -->
-                <div class="product-check overflow-y-auto" style="max-height: 500px;">
+                <div class="product-check overflow-y-auto" style="width: 100%; max-height: 500px;">
                     <div class="container mb-4" id="order-summary">
                         <div class="list-item row p-2 border border-1 mb-2">
                             <div class="col-4 col-md-3 product-img d-flex align-items-center justify-content-center">
@@ -139,32 +139,32 @@
 
             
             <!-- Payment and Shipping Form -->
-            <div class="col-md-5">
+            <div class="col-md-6 col-lg-5">
                 <h4>Billing and Shipping</h4>
                 <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="inputname" class="form-label">Your name <span class="text-danger fw-bold">*</span></label>
+                        <label for="inputname" class="form-label mb-0">Your name <span class="text-danger fw-bold">*</span></label>
                         <input type="text" class="form-control rounded-0" id="inputname" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="inputtel" class="form-label">Your Phone <span class="text-danger fw-bold">*</span></label>
+                        <label for="inputtel" class="form-label mb-0">Your Phone <span class="text-danger fw-bold">*</span></label>
                         <input type="tel" class="form-control rounded-0" minlength="10" maxlength="10" id="inputtel" 
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-3456-7890" required>
                       </div>
                     <div class="col-12">
-                      <label for="inputEmail" class="form-label">Your Email <span class="text-danger fw-bold">*</span></label>
+                      <label for="inputEmail" class="form-label mb-0">Your Email <span class="text-danger fw-bold">*</span></label>
                       <input type="email" class="form-control rounded-0" id="inputEmail" placeholder="example@gmail.com" required>
                     </div>
                     <div class="col-12">
-                        <label for="inputaddress" class="form-label">Your Address <span class="text-danger fw-bold">*</span></label>
+                        <label for="inputaddress" class="form-label mb-0">Your Address <span class="text-danger fw-bold">*</span></label>
                         <textarea class="form-control rounded-0" id="inputaddress" required></textarea>
                     </div>
                     <div class="col-12">
-                        <label for="inputdiscount" class="form-label">Discount</label>
+                        <label for="inputdiscount" class="form-label mb-0">Discount</label>
                         <input type="text" class="form-control rounded-0" id="inputdiscount">
                     </div>
                     <div class="col-12">
-                        <label for="payment" class="form-label">Payment Method <span class="text-danger fw-bold">*</span></label>
+                        <label for="payment" class="form-label mb-0">Payment Method <span class="text-danger fw-bold">*</span></label>
                         <select class="form-select rounded-0" id="payment" required>
                             <option>Cash on Delivery</option>
                             <option>Credit Card</p></option>
