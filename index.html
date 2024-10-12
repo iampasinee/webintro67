@@ -27,7 +27,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand me-auto" href="#">Logo</a>
+          <a class="navbar-brand me-auto" href="index.html">Logo</a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
@@ -36,10 +36,10 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active mx-lg-2" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Collections</a>
+                            <a class="nav-link mx-lg-2" href="#newcollection">New Collections</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Products</a>
@@ -48,17 +48,17 @@
                             <a class="nav-link mx-lg-2" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Contact</a>
+                            <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
           </div>
 
-            <a href="#" class="icon-botton " onclick="toggleSearch()">
+            <a class="icon-botton " onclick="toggleSearch()">
                 <i class="bi bi-search"></i>
             </a>
             <div class="search-bar" id="search-bar">
-                <input type="text" placeholder="Search products..." aria-label="Search">
+                <input type="search" placeholder="Search products..." aria-label="Search">
             </div>
             <a href="#" class="icon-botton ">
                 <i class="bi bi-person-circle"></i>
@@ -73,8 +73,6 @@
                     <span class="nav-badge cart" id="badge-all">0</span>
                 </i>
             </a>
-
-
 
           <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -100,7 +98,7 @@
                             There are so many variations passages of management Your mindset about bussines in your company or ogency
                         </div>
                         <div class="cta">
-                            <a href="#" class="btn btn-bittersweet fs-5">Shop Now <i class="bi bi-arrow-right"></i></a>
+                            <a href="#" class="btn btn-outline-bittersweet fs-5">Shop Now <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -127,8 +125,8 @@
 
         <!-- Product List -->
          <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3" >
+            <div class="row ">
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4" >
                     <div class="product-box" data-id="product-1">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -156,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3" >
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4" >
                     <div class="product-box" data-id="product-2">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -184,7 +182,35 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4" >
+                    <div class="product-box" data-id="product-3">
+                        <div class="product-inner-box position-relative">
+                            <div class="box-img">
+                                <img src="./image/s11-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                            </div>
+                            <div class="icons position-absolute">
+                                <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                            </div>
+                            <div class="onsale">
+                                <span class="badge rounded-pill"> NEW </span>
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name text-center">
+                                <h3><a href="./product/product-detail-3.html"> กระโปรงลายดอกไม้ </a></h3>
+                            </div>
+                            <div class="product-price text-center">
+                                <data class="card-price" value="200"> ฿200 </data>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4">
                     <div class="product-box">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -212,7 +238,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4">
                     <div class="product-box">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -240,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4">
                     <div class="product-box">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -268,7 +294,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 md-mb-3 pb-3">
+                <div class="col-12 col-md-6 col-lg-3 mb-md-4">
                     <div class="product-box">
                         <div class="product-inner-box position-relative">
                             <div class="box-img">
@@ -303,7 +329,7 @@
     </section>
 
     <!-- New collections -->
-    <div class="container mb-3">
+    <div class="container mb-3" id="newcollection">
         <div class="row p-0">
             <div class="col-md-5 col-lg-4 col-xl-3 m-0 p-0 text-center">
                 <h2>New collection Special</h2>
@@ -312,11 +338,10 @@
                 <hr>
             </div>
         </div>
-        <div class="newcol">
-            <div class="overflow-x-scroll">
-                <div class="scrollable-container">
-                    <div class="row flex-nowrap pt-4">
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
+
+            <div class="has-srollbar">
+                <div class="row flex-nowrap pt-4 mb-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
                             <div class="product-box" data-id="product-1">
                                 <div class="product-inner-box position-relative">
                                     <div class="box-img">
@@ -342,160 +367,202 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-        
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
-                            <div class="product-box" data-id="product-2">
-                                <div class="product-inner-box position-relative">
-                                    <div class="box-img">
-                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
-                                    </div>
-                                    <div class="icons position-absolute">
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
-                                    </div>
-                                    <div class="onsale">
-                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-name text-center">
-                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
-                                    </div>
-                                    <div class="product-price text-center">
-                                        <data class="card-price" value="1790"> ฿1,790 </data>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
-                            <div class="product-box" data-id="product-1">
-                                <div class="product-inner-box position-relative">
-                                    <div class="box-img">
-                                        <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
-                                    </div>
-                                    <div class="icons position-absolute">
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
-                                    </div>
-                                    <div class="onsale">
-                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-name text-center">
-                                        <h3><a href="product/product-detail-1.html"> Iris Bright Dress </a></h3>
-                                    </div>
-                                    <div class="product-price text-center">
-                                        <data class="card-price" value="1490"> ฿1,490 <del>฿1,690</del> </data>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
-                            <div class="product-box" data-id="product-2">
-                                <div class="product-inner-box position-relative">
-                                    <div class="box-img">
-                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
-                                    </div>
-                                    <div class="icons position-absolute">
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
-                                    </div>
-                                    <div class="onsale">
-                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-name text-center">
-                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
-                                    </div>
-                                    <div class="product-price text-center">
-                                        <data class="card-price" value="1790"> ฿1,790 </data>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
-                            <div class="product-box" data-id="product-1">
-                                <div class="product-inner-box position-relative">
-                                    <div class="box-img">
-                                        <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
-                                    </div>
-                                    <div class="icons position-absolute">
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
-                                    </div>
-                                    <div class="onsale">
-                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-name text-center">
-                                        <h3><a href="product/product-detail-1.html"> Iris Bright Dress </a></h3>
-                                    </div>
-                                    <div class="product-price text-center">
-                                        <data class="card-price" value="1490"> ฿1,490 <del>฿1,690</del> </data>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-3 col-lg-3 col-md-4 md-mb-3 pb-3" >
-                            <div class="product-box" data-id="product-2">
-                                <div class="product-inner-box position-relative">
-                                    <div class="box-img">
-                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
-                                    </div>
-                                    <div class="icons position-absolute">
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
-                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
-                                    </div>
-                                    <div class="onsale">
-                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
-                                    </div>
-                                </div>
-                                <div class="product-info">
-                                    <div class="product-name text-center">
-                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
-                                    </div>
-                                    <div class="product-price text-center">
-                                        <data class="card-price" value="1790"> ฿1,790 </data>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+        
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
+                            <div class="product-box" data-id="product-2">
+                                <div class="product-inner-box position-relative">
+                                    <div class="box-img">
+                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                    </div>
+                                    <div class="icons position-absolute">
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                                    </div>
+                                    <div class="onsale">
+                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name text-center">
+                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
+                                    </div>
+                                    <div class="product-price text-center">
+                                        <data class="card-price" value="1790"> ฿1,790 </data>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
+                            <div class="product-box" data-id="product-1">
+                                <div class="product-inner-box position-relative">
+                                    <div class="box-img">
+                                        <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                    </div>
+                                    <div class="icons position-absolute">
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                                    </div>
+                                    <div class="onsale">
+                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name text-center">
+                                        <h3><a href="product/product-detail-1.html"> Iris Bright Dress </a></h3>
+                                    </div>
+                                    <div class="product-price text-center">
+                                        <data class="card-price" value="1490"> ฿1,490 <del>฿1,690</del> </data>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
+                            <div class="product-box" data-id="product-2">
+                                <div class="product-inner-box position-relative">
+                                    <div class="box-img">
+                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                    </div>
+                                    <div class="icons position-absolute">
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                                    </div>
+                                    <div class="onsale">
+                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name text-center">
+                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
+                                    </div>
+                                    <div class="product-price text-center">
+                                        <data class="card-price" value="1790"> ฿1,790 </data>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
+                            <div class="product-box" data-id="product-1">
+                                <div class="product-inner-box position-relative">
+                                    <div class="box-img">
+                                        <img src="./image/product-1.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                    </div>
+                                    <div class="icons position-absolute">
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                                    </div>
+                                    <div class="onsale">
+                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name text-center">
+                                        <h3><a href="product/product-detail-1.html"> Iris Bright Dress </a></h3>
+                                    </div>
+                                    <div class="product-price text-center">
+                                        <data class="card-price" value="1490"> ฿1,490 <del>฿1,690</del> </data>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+        
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 pb-3" >
+                            <div class="product-box" data-id="product-2">
+                                <div class="product-inner-box position-relative">
+                                    <div class="box-img">
+                                        <img src="./image/product-2.jpg" width="312" height="358" alt="Clothing" class="img-fluid">
+                                    </div>
+                                    <div class="icons position-absolute">
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-heart-fill"></i></a>
+                                        <a href="#" class=""><i class=" text-decoration-none bi bi-eye-fill"></i></a>
+                                    </div>
+                                    <div class="onsale">
+                                        <span class="badge rounded-pill"><i class="bi bi-arrow-down"></i> 30%</span>
+                                    </div>
+                                    <div class="cart-btn">
+                                        <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-name text-center">
+                                        <h3><a href="#"> Summer Blossom Dress </a></h3>
+                                    </div>
+                                    <div class="product-price text-center">
+                                        <data class="card-price" value="1790"> ฿1,790 </data>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        
         
     </div>
     
 
     <!-- SERVICE -->
-     <div class="container">
-
+     <div class="container my-5 service">
+        <div class="row">
+            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
+                        <h1><i class="bi bi-truck"></i></h1>
+                    </div>
+                    <div class="col p-0 card-title">
+                        <p class="m-0 fw-semibold fw-bold fs-4">Free Shiping</p>
+                        <p class="m-0 text-muted">All orders over <span>$150</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
+                        <h1><i class="bi bi-credit-card"></i></h1>
+                    </div>
+                    <div class="col p-0 card-title">
+                        <p class="m-0 fw-semibold fw-bold fs-4">Quick Payment</p>
+                        <p class="m-0 text-muted">100% secure payment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
+                        <h1><i class="bi bi-arrow-clockwise"></i></h1>
+                    </div>
+                    <div class="col p-0 card-title">
+                        <p class="m-0 fw-semibold fw-bold fs-4">Free Returns</p>
+                        <p class="m-0 text-muted">Money back in 30 days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-md-5 col-lg-3 my-2 mx-auto mx-md-0">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 py-2 text-center rounded-circle me-1 card-icon">
+                        <h1><i class="bi bi-headset"></i></h1>
+                    </div>
+                    <div class="col p-0 card-title">
+                        <p class="m-0 fw-semibold fw-bold fs-4">24/7 Support</p>
+                        <p class="m-0 text-muted">Get Quick Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
      </div>
      
 
@@ -540,11 +607,11 @@
                 <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-sm-3">
                     <h5 class="footer-title">Quick Links</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Collections</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Products</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Shop</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0">Contact</a></li>
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li class="nav-item mb-2"><a href="index.html#newcollection" class="nav-footer p-0"><i class="bi bi-chevron-right"></i>New Collections</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Products</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Shop</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Contact</a></li>
                     </ul>
                 </div>
       

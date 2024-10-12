@@ -6,6 +6,7 @@
         --maximum-blue-green_10: hsla(185, 75%, 45%, 0.1);
         --rich-black-fogra-29: hsl(217, 28%, 9%);
         --gray-x-11-gray: hsl(0, 0%, 74%);
+        --g-12-gray: hsl(0, 0%, 95%);
         --oxford-blue_60: hsla(230, 41%, 14%, 0.6);
         --bittersweet: hsl(5, 100%, 69%);
         --smoky-black: rgb(7, 6, 1);
@@ -86,6 +87,37 @@
     background-color: var(--white);
     color: var(--bittersweet);
     border: 1px solid var(--bittersweet);
+}
+
+/* Button color */
+.btn-outline-white{
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--gray-x-11-gray);
+}
+.btn-outline-white:is(:hover,:focus){
+    color: var(--black);
+    background-color: var(--g-12-gray);
+    border: 1px solid var(--g-12-gray);
+}
+.btn-outline-black{
+    color: var(--black);
+    background-color: var(--white);
+    border: 1px solid var(--black_90);
+}
+.btn-outline-black:is(:hover,:focus){
+    color: var(--white);
+    background-color: var(--black);
+}
+.btn-outline-purple{
+    color:hsl(282, 39%, 58%);
+    background-color: var(--white);
+    border: 1px solid hsl(282, 39%, 58%);
+}
+.btn-outline-purple:is(:hover,:focus){
+    color:var(--white);
+    background-color: hsl(282, 39%, 58%);
+    border: 1px solid hsl(282, 39%, 58%);
 }
 
 

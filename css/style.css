@@ -24,10 +24,14 @@
     --ff-roboto: 'Roboto', sans-serif;
     --ff-josefin-sans: 'Josefin Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* color */
 .btn-bittersweet{
-    color: var(--bittersweet);
+    color: var(--white);
+    background-color: var(--bittersweet);
     border: 1px solid var(--bittersweet);
     font-family: var(--ff-josefin-sans);
     font-weight: 400;
@@ -36,6 +40,20 @@
     transition: 0.3s ease-in-out;
 }
 .btn-bittersweet:hover{
+    background-color: var(--white);
+    color: var(--bittersweet);
+    border: 1px solid var(--bittersweet);
+}
+.btn-outline-bittersweet{
+    color: var(--bittersweet);
+    border: 1px solid var(--bittersweet);
+    font-family: var(--ff-josefin-sans);
+    font-weight: 400;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.btn-outline-bittersweet:hover{
     color: var(--white);
     background: var(--bittersweet);
     transform: scale(1.02);
@@ -496,32 +514,38 @@ section.product-section{
 }
 
 /* New collections*/
-.newcol .overflow-x-scroll {
+.has-srollbar {
     height: max-content; /* กำหนดความสูงของ div */
     overflow-x: auto; /* เปิดใช้งานการเลื่อนในแนวนอน */
     white-space: nowrap; /* ป้องกันไม่ให้เนื้อหาตัดบรรทัด */
 }
 
-.newcol .scrollable-container {
-    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงสินค้าในแถวเดียว */
-    width: 20vw; /* ความกว้าง 20% ของหน้าจอ */
+.has-srollbar::-webkit-scrollbar { height: 10px;}
+
+.has-srollbar::-webkit-scrollbar-track {
+    background: var(--white);
+    border-radius: 20px;
+    outline: 2px solid var(--bittersweet);
+} 
+
+.has-srollbar::-webkit-scrollbar-thumb {
+    background: var(--bittersweet);
+    border: 2px solid var(--white);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.has-srollbar::-webkit-scrollbar-button { width: calc(44% - 35px);}
+
+#newcollection {
+    scroll-margin-top: 100px; /* ปรับค่า 100px เป็นระยะห่างที่ต้องการ */
 }
 
-/* ตกแต่ง scrollbar */
-.newcol .overflow-x-scroll::-webkit-scrollbar {
-    height: 8px; /* กำหนดความสูงของ scrollbar สำหรับแนวนอน */
+/* Sevice */
+.service .card-icon i{
+    color: var(--bittersweet);
 }
-
-.newcol .overflow-x-scroll::-webkit-scrollbar-thumb {
-    background-color: var(--bittersweet); /* เปลี่ยนเป็นสีที่ต้องการ */
-    border-radius: 10px; /* มุมโค้งของ thumb */
-    border: 1px solid var(--white); /* เส้นขอบสำหรับ thumb */
-}
-
-.newcol .overflow-x-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1; /* สีของ track (พื้นหลัง scrollbar) */
-    border-radius: 10px; /* มุมโค้งของ track */
-    outline: 1px solid var(--bittersweet); /* เส้นขอบสำหรับ track */
+.service .card-title p span{
+   color: var(--bittersweet);
 }
 
 
@@ -553,6 +577,7 @@ section.product-section{
     color: var(--bittersweet);
     transition: 0.3s color;
 }
+
 .newslet-text{
     font-family: var(--ff-josefin-sans)
 }
@@ -564,6 +589,7 @@ section.product-section{
     color: var(--bittersweet);
     background: transparent;
 }
+
 
 
 
@@ -613,6 +639,10 @@ section.product-section{
 @media (max-width: 991px) {
     .navbar{
         position: sticky;
+    }
+    .has-srollbar::-webkit-scrollbar-button { 
+        width: calc(20% - 35px) !important;
+        display: block; /* บังคับให้แสดง */
     }
 }
 
@@ -680,5 +710,9 @@ section.product-section{
     }
     .product-title .text-title{
         font-size: 1.5rem;
+    }
+    .has-srollbar::-webkit-scrollbar-button { 
+        width: calc(50% - 35px) !important;
+        display: block; /* บังคับให้แสดง */
     }
 }
