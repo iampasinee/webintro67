@@ -687,7 +687,7 @@ section.product-section{
         position: sticky;
     }
     .has-srollbar::-webkit-scrollbar-button { 
-        width: calc(20% - 30px);
+        width: calc(30% - 30px);
         display: block; /* บังคับให้แสดง */
     }
 }
