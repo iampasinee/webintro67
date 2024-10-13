@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WO SHOP</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link  Bootstap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/p_detail.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="../index.html">Logo</a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../index.html#newcollection">New Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="../contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
+
+            <a class="icon-botton " onclick="toggleSearch()">
+                <i class="bi bi-search"></i>
+            </a>
+            <div class="search-bar" id="search-bar">
+                <input type="search" placeholder="Search products..." aria-label="Search">
+            </div>
+            <a href="#" class="icon-botton ">
+                <i class="bi bi-person-circle"></i>
+            </a>
+            <a href="#" class="icon-botton ">
+                <i class="bi bi-heart">
+                    <span class="nav-badge">2</span>
+                </i>
+            </a>
+            <a href="#" class="icon-botton " data-bs-toggle="offcanvas" data-bs-target="#shoppingcart" aria-controls="shoppingcart" aria-label="Toggle navigation">
+                <i class="bi bi-bag">
+                    <span class="nav-badge cart" id="badge-all">0</span>
+                </i>
+            </a>
+
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+    </nav>
+    <!-- END Navbar -->
+
+    <!-- Product Detail -->
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="main-image-container">
+                    <img id="main-image" src="../image/d2-1.jpg" class="img-fluid" alt="Product Image">
+                </div>
+                <div class="row mt-3 thumbnail-container justify-content-between">
+                    <div class="col-3">
+                        <img src="../image/d2-1.jpg" class="img-thumbnail" alt="Product Thumbnail" onclick="changeImage('../image/d2-1.jpg')">
+                    </div>
+                    <div class="col-3">
+                        <img src="../image/d2-2.jpg" class="img-thumbnail" alt="Product Thumbnail" onclick="changeImage('../image/d2-2.jpg')">
+                    </div>
+                    <div class="col-3">
+                        <img src="../image/d2-3.jpg" class="img-thumbnail" alt="Product Thumbnail" onclick="changeImage('../image/d2-3.jpg')">
+                    </div>
+                    <div class="col-3">
+                        <img src="../image/d2-4.jpg" class="img-thumbnail" alt="Product Thumbnail" onclick="changeImage('../image/d2-4.jpg')">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 product-box mt-4 mt-md-0" data-id="product-2">
+                <div class="box-img">
+                    <img src="../image/d2-1.jpg" class="" alt="Product Image">
+                </div>
+                <div class="product-name"><a href="#"><h1>icyicyshop แม็กซี่เดรส Hazel</h1></a></div>
+                <div class="text">
+                    icyicyshop แม็กซี่เดรส Hazel เดรสทรงขนมชั้นสไตล์อังกฤษ สวย หวาน กับผ้าพิมพ์ลายเอกลักษณ์เฉพาะ 
+                    ICYICY แขนพองน้อยๆ จั้มปลายแขนแต่งกระดุมปั๊ม ด้านหลังเว้า เชือกผูกเกร๋ๆ ซิปหลัง เอวสูง ซับในทั้งตัว
+                </div>
+                <p class="text-warning">★ ★ ★ ★ ☆ (2 reviews)</p>
+                <h2 class="product-price"><data class="card-price" value="499"> ฿499</data></h2>
+                
+                <div class="mt-3">
+                    <h5>Color:</h5>
+                    <div id="color-options ">
+                        <button class="btn btn-outline-primary me-1 color-btn rounded-pill" data-color="blue">Blue</button>
+                        <button class="btn btn-outline-success me-1 rounded-pill" data-color="grenn">Green</button>
+                        <button class="btn btn-outline-purple me-1 rounded-pill" data-color="purple">Purple</button>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <h5>Size:</h5>
+                    <select class="form-select w-auto" aria-label="Select Size">
+                        <option selected>Select size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+                
+                <!-- 
+                <div class="mt-3">
+                    <h5>Quantity:</h5>
+                    <input type="number" class="form-control w-auto" value="1" min="1" max="10">
+                </div>
+                 -->
+            
+                <div class="cart-btn-detail mt-4" onclick="addToCart(event)">
+                    <button class="btn shadow-sm rounded-pill"><i class="bi bi-cart3"></i> Add to Cart</button>
+                </div>
+
+                <h5 class="mt-4">SKU: BE454VGR7</h5>
+                <h5>Categories:</h5>
+                <p>Pants, Women</p>
+            </div>
+        </div>
+
+        <div class="col mt-5 description">
+            <h4>Description</h4>
+            <p>Quisque varius diam vel metus mattis, id aliquam diam tincidunt. Proin vitae magna in dui finibus malesuada et nulla. 
+                Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, et sodales leo maximus a. 
+                Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. 
+                Nulla aliquam mauris eu accumsan tincidunt.</p>
+        </div>
+    </div>
+    <!-- End Product -->
+
+    <div class="space my-5">
+        <p>&nbsp;</p>
+    </div>
+
+
+    <!-- Offcanvas Shopping Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shoppingcart" aria-labelledby="yourcart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="shoppingcart">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <!-- รายการสินค้า จะถูกเติมข้อมูลที่นี่ -->
+            <div id="cart-items">
+                <!-- สินค้าจะแสดงที่นี่ -->
+            </div>
+        </div>
+
+        <!-- ปุ่ม Checkout และราคารวม -->
+        <div class="checkout-section">
+            <div class="d-flex justify-content-between align-items-center p-3 border-top">
+                <span class="fw-bold total">Total: ฿0</span>
+                <a href="../checkout.html" class="btn">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid m-0 section-footer">
+        <footer class="py-3 px-lg-3">
+            <div class="row justify-content-center justify-content-sm-center justify-content-md-between justify-content-lg-center pt-4 px-lg-5">
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-sm-3">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class=" flex-column p-0">
+                        <li class="mb-0"><address class="p-0 "><i class="bi bi-geo-alt-fill"></i> <span> 123 Noen Hom, Mueang Prachin Buri, Prachin Buri,Thailand</span></address></li>
+                        <li class="mb-0"><a href="tel:+660123456789" class="p-0 "><i class="bi bi-telephone-fill"></i> <span> +66 0123456789</span></a></li>
+                        <li class="mb-2"><a href="mailto:Example@email.com" class="p-0"><i class="bi bi-envelope-fill"></i><span> Example@email.com</span></a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-sm-3">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="../index.html#" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Home</a></li>
+                        <li class="nav-item mb-2"><a href="../product.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Products</a></li>
+                        <li class="nav-item mb-2"><a href="../index.html#newcollection" class="nav-footer p-0"><i class="bi bi-chevron-right"></i>New Collections</a></li>
+                        <li class="nav-item mb-2"><a href="../contact.html" class="nav-footer p-0"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+      
+                <div class="col-11 col-sm-10 col-md-5 col-lg-3 mb-3 mb-lg-0">
+                    <form>
+                        <h5 class="footer-title">Subscribe to our newsletter</h5>
+                        <p class="newslet-text">Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <form class="card p-2">
+                                <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <button type="submit" class="btn btn-newslet">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+      
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-0 my-0 py-md-2 px-lg-5 mx-lg-5 border-top">
+                <p class="">© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex ">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-facebook fs-4"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-instagram fs-4"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-tiktok fs-4"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+      </div>
+
+    
+
+
+
+    <!-- Script Main.js -->
+     <script src="../js/main.js"></script>
+
+    <!-- Script Bootstap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

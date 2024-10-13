@@ -21,6 +21,7 @@
     /*  Typography */
         --ff-roboto: 'Roboto', sans-serif;
         --ff-josefin-sans: 'Josefin Sans', sans-serif;
+        --ff-mitr-sans: "Mitr", sans-serif;
     }
 /* ปรับขนาดของสินค้า */
 .img-fluid {
@@ -43,7 +44,9 @@
     position: relative;
     background-color: #f8f9fa;
 }
-
+.product-box, a{
+    font-family: var(--ff-mitr-sans);
+}
 #main-image {
     position: absolute;
     top: 0;
