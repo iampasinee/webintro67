@@ -32,10 +32,10 @@ function updateCartDisplay() {
                 </div>
                 <div class="col-8 col-md-9 justify-content-center">
                     <div class="product-name text-center">
-                        <h4><a href="#">${product.name}</a></h4>
+                        <h3><a href="#">${product.name}</a></h3>
                     </div>
                     <div class="product-price text-center m-0">
-                        <data class="card-price" value="${product.price}">฿${productTotalPrice.toLocaleString()}</data>
+                        <data class="card-price" value="${product.price}">฿${product.price}</data>
                     </div>
                     <div class="row product-quantity justify-content-center mt-2">
                         <div class="col-2 col-md-1 minus text-center" onclick="updateQuantity('${product.id}', -1)"><i class="bi bi-dash"></i></div>
@@ -164,10 +164,12 @@ addToCartButtons.forEach(button => {
     searchBar.classList.toggle('active');
 }
 
+//เปลี่ยนรูปในหน้ารายละเอียด
 function changeImage(imageSrc) {
     document.getElementById('main-image').src = imageSrc;
 }
 
+//เลือกสีในหน้ารายละเอียด
 const colorButtons = document.querySelectorAll('.color-btn');
     let selectedColor = '';
 
@@ -186,4 +188,34 @@ const colorButtons = document.querySelectorAll('.color-btn');
             console.log('Selected Color:', selectedColor);
         });
     });
-    
+
+
+// ปุ่มประเภทสินค้า
+const filterButtons = document.querySelectorAll('.filter_list button');
+const filterableCards = document.querySelectorAll('.filter_card .card_item');
+
+// ฟังก์ชัน filterCards
+function filterCards(e) {
+    e.preventDefault(); // ป้องกันการ reload หรือ behavior เริ่มต้นของฟอร์ม
+
+    // ลบคลาส active จากปุ่มที่มีคลาส active อยู่
+    filterButtons.forEach(button => button.classList.remove("active"));
+
+    // เพิ่มคลาส active ให้กับปุ่มที่ถูกคลิก
+    e.target.classList.add("active");
+
+    // ซ่อนการ์ดทั้งหมด
+    filterableCards.forEach(card_item => {
+        card_item.classList.add("hide");
+
+        // แสดงการ์ดที่ตรงกับประเภทที่เลือก (ถ้ามีเงื่อนไขเพิ่มเติม)
+        if(card_item.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+            card_item.classList.remove("hide");
+        }
+    });
+
+}
+
+// เพิ่มการคลิกให้กับปุ่ม
+filterButtons.forEach(button => button.addEventListener("click", filterCards));
+
