@@ -566,7 +566,7 @@ section.product-section{
     border-radius: 20px;
     cursor: pointer;
 }
-.has-srollbar::-webkit-scrollbar-button { width: calc(44% - 35px);}
+.has-srollbar::-webkit-scrollbar-button { width: calc(42% - 35px);}
 
 #newcollection {
     scroll-margin-top: 100px; /* ปรับค่า 100px เป็นระยะห่างที่ต้องการ */
@@ -687,7 +687,7 @@ section.product-section{
         position: sticky;
     }
     .has-srollbar::-webkit-scrollbar-button { 
-        width: calc(20% - 35px) !important;
+        width: calc(20% - 30px) !important;
         display: block; /* บังคับให้แสดง */
     }
 }
