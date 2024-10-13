@@ -435,6 +435,13 @@ section.product-section{
 
 /* list Cart */
   
+.list-item .product-name a{
+    font-family: var(--ff-mitr-sans);
+    color: var(--onyx);
+    font-size: 17px;
+    font-weight: 450;
+    transition: 0.25s ease;
+}
 /* สไตล์สำหรับรายการสินค้า */
 .list-item {
     background-color: #f8f9fa; /* สีพื้นหลังที่สว่างขึ้น */
@@ -574,6 +581,17 @@ section.product-section{
 }
 .service .card-title p span{
    color: var(--bittersweet);
+}
+
+/* Check Out*/
+.section-checkout,.section-contact{
+    font-family: var(--ff-mitr-sans);
+}
+.checkout-sum{
+    font-weight: 500;
+}
+.checkout-sum .total span{
+    color: var(--bittersweet);
 }
 
 
